@@ -22,10 +22,12 @@
      </tr>
    </thead>
    <tbody>
+     <?php foreach ($movies as $movie) { ?>
      <tr>
-       <th><?php echo $movies['name']; ?></th>
-       <td><?php echo $movies['year']; ?></td>
+       <th><?php echo $movie['name']; ?></th>
+       <td><?php echo $movie['year']; ?></td>
     </tr>
+    <?php } ?>
    </tbody>
   </table>
  </div>
