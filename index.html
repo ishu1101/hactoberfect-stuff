@@ -13,15 +13,20 @@
 <body>
 
  <div class="container">
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Year</th>
+  
+   <table class="table">
+   <thead>
+     <tr>
+       <th scope="col">Name</th>
+       <th scope="col">Year</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th><?php echo $movies['name']; ?></th>
+       <td><?php echo $movies['year']; ?></td>
     </tr>
-    <tr>
-      <td><?php echo $movies['name']; ?>
-      <td><?php echo $movies['year']; ?>
-    </tr>
+   </tbody>
   </table>
  </div>
 
