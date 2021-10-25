@@ -1,4 +1,5 @@
 <?php>
-  $contents = file_get_content('/films.json');
-  echo $contents;
+  $movies = json_decode(file_get_content('/films.json'));
+
+  include('/index.html');
   
