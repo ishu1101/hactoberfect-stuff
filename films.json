@@ -25,5 +25,16 @@
 {
   year: 2016,
   name: 'Arrival'
+},
+{
+  year: 2010,
+  name:'Inception'
+},
+{
+  year: 2009,
+  name:'Avatar'
+},
+{
+  year: 2021,
+  name:'Shang-Chi And The Legend Of The Ten Rings '
 }
-
