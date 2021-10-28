@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>We love movies!</title>
+  <title>We love movies!</title>
+  <style>
+    .navbar-brand {
+      color: white;
+      font-size: 30px;
+
+
+    }
+
+    nav {
+      background-color: black;
+    }
+
+    .navbar-custom {
+      background-blend-mode: #000;
+      align-items: center;
+      justify-content: center;
+
+    }
+  </style>
 </head>
+
+
+<header>
+
+  <nav class="navbar navbar-custom">
+    <span class="navbar-brand mb-4 mt-4 "></span>
+  </nav>
+</header>
+
 <body>
 
- <div class="container">
-  
-   <table class="table">
-   <thead>
-     <tr>
-       <th scope="col">Name</th>
-       <th scope="col">Year</th>
-     </tr>
-   </thead>
-   <tbody>
-     <?php foreach ($movies as $movie) { ?>
-     <tr>
-       <td><?php echo $movie['name']; ?></td>
-       <td><?php echo $movie['year']; ?></td>
-    </tr>
-    <?php } ?>
-   </tbody>
-  </table>
- </div>
+  <div class="container">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach ($movies as $movie) { ?>
+        <tr>
+          <td>
+            <?php echo $movie['name']; ?>
+          </td>
+          <td>
+            <?php echo $movie['year']; ?>
+          </td>
+        </tr>
+        <?php } ?>
+      </tbody>
+    </table>
+  </div>
 
 </body>
+
 </html>
